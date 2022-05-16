@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-stencil/hello-js": ["packages/hello-js/src/index.ts"],
       "@nx-stencil/hello-tsc": ["packages/hello-tsc/src/index.ts"],
       "@nx-stencil/my-comp": ["dist/packages/my-comp"],
       "@nx-stencil/my-comp/loader": ["dist/packages/my-comp/loader"]

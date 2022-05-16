@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "hello-js": "packages/hello-js",
     "hello-tsc": "packages/hello-tsc",
     "my-comp": "packages/my-comp"
   }
