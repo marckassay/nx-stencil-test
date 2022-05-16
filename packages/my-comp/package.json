@@ -9,6 +9,16 @@
   "collection": "./dist/collection/collection-manifest.json",
   "collection:main": "./dist/collection/index.js",
   "unpkg": "./dist/my-comp/my-comp.js",
+  "scripts": {
+    "test": "jest --no-cache"
+  },
+  "devDependencies": {
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "ts-jest": "27.1.4",
+    "jest": "27.1.4",
+    "typescript": "^4.6.4"
+  },
   "files": [
     "dist/",
     "loader/"
