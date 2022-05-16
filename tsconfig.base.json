@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-stencil/hello-tsc": ["packages/hello-tsc/src/index.ts"],
+      "@nx-stencil/my-comp": ["dist/packages/my-comp"],
+      "@nx-stencil/my-comp/loader": ["dist/packages/my-comp/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

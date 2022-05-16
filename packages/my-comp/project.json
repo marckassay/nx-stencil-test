@@ -1,0 +1,66 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/my-comp/src",
+  "projectType": "library",
+  "generators": {
+    "@nxext/stencil:component": {
+      "style": "scss"
+    }
+  },
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nxext/stencil:test",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/my-comp/tsconfig.lib.json",
+        "configPath": "packages/my-comp/stencil.config.ts",
+        "outputPath": "dist/packages/my-comp"
+      }
+    },
+    "build": {
+      "executor": "@nxext/stencil:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/my-comp/tsconfig.lib.json",
+        "configPath": "packages/my-comp/stencil.config.ts",
+        "outputPath": "dist/packages/my-comp"
+      },
+      "configurations": {
+        "production": {
+          "dev": false,
+          "prod": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nxext/stencil:serve",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/my-comp/tsconfig.lib.json",
+        "configPath": "packages/my-comp/stencil.config.ts",
+        "outputPath": "dist/packages/my-comp"
+      }
+    },
+    "e2e": {
+      "executor": "@nxext/stencil:e2e",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "packages/my-comp/tsconfig.lib.json",
+        "configPath": "packages/my-comp/stencil.config.ts",
+        "outputPath": "dist/packages/my-comp"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": "packages/my-comp/**/*.{ts,tsx}"
+      }
+    }
+  }
+}
