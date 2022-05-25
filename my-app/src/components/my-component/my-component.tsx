@@ -1,8 +1,9 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
+import "@my-comps/my-comp"
 
 @Component({
-  tag: 'my-component',
+  tag: 'my-component-main',
   styleUrl: 'my-component.css',
   shadow: true,
 })
@@ -27,6 +28,9 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>
+      <my-component-main first="Stencil" last="'Don't call me a framework' JS"></my-component-main>
+      <div>Hello, World! I'm {this.getText()}</div>
+    </div>;
   }
 }

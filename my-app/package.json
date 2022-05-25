@@ -26,6 +26,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@my-comps/my-comp": "file:../my-comps/dist/packages/my-comp/my-comps-my-comp-0.0.1.tgz",
     "@stencil/core": "^2.13.0"
   },
   "devDependencies": {
