@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-comps/hello-tsc": ["packages/hello-tsc/src/index.ts"],
+      "@my-comps/my-comp": ["dist/packages/my-comp"],
+      "@my-comps/my-comp/loader": ["dist/packages/my-comp/loader"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
