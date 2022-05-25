@@ -29,7 +29,7 @@ export class MyComponent {
 
   render() {
     return <div>
-      <my-component-main first="Stencil" last="'Don't call me a framework' JS"></my-component-main>
+      <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
       <div>Hello, World! I'm {this.getText()}</div>
     </div>;
   }
