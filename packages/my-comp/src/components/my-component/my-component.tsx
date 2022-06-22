@@ -28,6 +28,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()} : ${helloTsc()}</div>;
+    return <div>Hello, World! I'm {this.getText()} : {helloTsc()}</div>;
   }
 }
