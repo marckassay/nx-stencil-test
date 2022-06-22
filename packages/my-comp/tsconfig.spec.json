@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "outDir": "../../dist/out-tsc",
+      "composite": true,
+      "declaration": true,
+      "types": ["node", "jest"],
+    },
+    "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+    "exclude": ["stencil.config.ts"]
+  }

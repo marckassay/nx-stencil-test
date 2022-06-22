@@ -1,11 +1,7 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { MyComponent } from './my-component';
-// import { helloTsc } from '@nx-stencil/hello-tsc'
-
 
 describe('my-component', () => {
-
-  // helloTsc();
 
   it('renders', async () => {
     const { root } = await newSpecPage({

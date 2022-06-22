@@ -1,6 +1,6 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
-import { helloTsc } from '@nx-stencil/hello-tsc'
+import { helloTsc } from '@nx-stencil/hello-tsc';
 
 @Component({
   tag: 'my-component',
